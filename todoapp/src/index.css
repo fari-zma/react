@@ -1,0 +1,60 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    padding: 20px;
+    background-color: #b3e7dc;
+}
+
+.mid_div{
+    background-color: #f8f8f5;
+    height: 100%;
+    margin-left: 300px;
+    margin-right: 300px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 40px;
+    color: #237b90;
+}
+
+input {
+    background-color: transparent;
+    border: #237b90;
+    font-size: 16px;
+    padding: 5px;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    color: #f891a0;
+    font-size: 25px;
+}
+
+.list{
+    color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo {
+    background-color: #f9e8ef;
+    color: #237b90;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+li{
+    width: 500px;
+}
+
+.del-btn {
+    color: red;
+    margin-left: 10px;
+}
