@@ -6,4 +6,5 @@ ToDo list app using react js.
 # Screenshot
 <img src='images/todo.png'>
 
-[run](https://farizma-todo.netlify.app)
+# Run
+[Click here](https://farizma-todo.netlify.app)
