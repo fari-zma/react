@@ -35,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Amazon Clone using react and firebase. The 5-Day React JavaScript Challenge [@CleverProgrammer](https://www.cleverprogrammer.com/)",
+  "main": "index.js",
+  "author": "Khadija",
+  "license": "ISC"
 }
