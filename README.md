@@ -1,4 +1,4 @@
 ## React projects
 
-* ToDo App
-* Tic Tac Toe
+* [ToDo App] (todoapp)
+* Tic Tac Toe (tictactoe)
