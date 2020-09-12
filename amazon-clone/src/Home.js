@@ -1,16 +1,39 @@
-import React from "react";
-import "./Home.css";
+import React, { useState, useEffect } from "react";
+import "./css/Home.css";
 import Product from "./Product";
 
+const banners = [
+  "https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg",
+  "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Computers_1x._CB432469755_.jpg",
+  "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Currency_v2_en_US_2x._CB428993290_.jpg",
+  "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Sports_en_US_1x._CB431860448_.jpg",
+  "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Home_v2_en_US_1x._CB429090084_.jpg",
+  "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Toys_en_US_1x._CB431858161_.jpg",
+  "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Beauty_v2_en_US_1x._CB429089975_.jpg",
+];
+let index = 0;
+
 function Home() {
+  const [banner, setBanner] = useState(banners[0]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      changeBanner();
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const changeBanner = () => {
+    console.log("index ", index);
+    if (index === 5) index = 0;
+    else index = index + 1;
+    setBanner(banners[index]);
+  };
+
   return (
     <div className="home">
       <div className="home_container">
-        <img
-          className="home_image"
-          alt=""
-          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
-        />
+        <img className="home_image" alt="" src={banner} />
 
         <div className="home_row">
           <Product

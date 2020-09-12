@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 /build
-/.vscode
+/keys.txt
 .pnp.js
 
 # testing

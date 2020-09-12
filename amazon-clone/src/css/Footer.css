@@ -1,0 +1,21 @@
+body {
+  margin: 0px;
+}
+
+.footer {
+  background-color: #131a22;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  color: #b6b5ad;
+  font-size: 15px;
+  padding-top: 10px;
+}
